@@ -1,0 +1,41 @@
+--- Install MySQL Workbench and create a connection ---
+
+Step 1. visit https://www.mysql.com/products/workbench/ and download the workbench.
+Step 2. Run the workbench after installation was completed.
+Step 3. Under "MySQL Connections" press the little add button on the right, a "Setup New Connection" screen should appear.
+Step 4. Put in all the parameters connection name, hostname, username, and password. 
+Step 5. Click ok. 
+Step 6. Double click the connection and you're good to go! 
+
+Happy Coding :)!
+-Paul
+
+--- Starting a ubuntu vagrant box and running the NodeJS server ---
+
+NOTE: You can download all these files from gitlab and assumes you have vagrant installed. 
+
+Step 1. Start a command prompt.
+Step 2. Change directory into the folder containing the Vagrantfile.
+Note: you might need to vagrant box update, because the version may be outdated.
+Step 3. Type vagrant up
+Step 4. Type vagrant init
+
+*From this point on we will ssh into the virtual machine and work from there.
+
+Step 5. Type vagrant ssh
+Step 6. Type cd /vagrant
+NOte: If you ls after this step you should see all the files linked from your vagrant folder. If not, one possible solution is you did not update the box.
+Step 7. cd into web-services
+step 8. type npm start
+Note: We're using nodejs so I'm assuming you already have nodejs downloaded onto your box. 
+Note: If not, please download nodejs before continuation.
+
+Step 9. Open the program POSTMAN. Download link is here https://www.getpostman.com/
+Step 10. Type http://localhost:3001/ into the postman bar
+Step 11. If you get the message "Connected" then . . .
+
+Congradulations, you have setup the nodejs server and happy coding :)!
+-Paul
+
+
+OPTIONAL STEPS: Go to the vagrant folder and find index.html and run it. 

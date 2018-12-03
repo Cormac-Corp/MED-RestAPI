@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "index.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <title>Website testing</title>
+  </head>
+  
+  <body>
+        <img src = "C:\Users\plee\Desktop\plee\Vagrant\Ubuntu\web-services\pictures\cormac-corp.jpg"/><hr>
+        <div id = "center">
+          <img src = "C:\Users\plee\Desktop\plee\Vagrant\Ubuntu\web-services\pictures\view.jpeg"/><hr>
+        </div>
+        <table align = "center">
+          <tr>
+            <td class = "form_td">
+              <form action="#" method = "get" onsubmit = "getData1()">
+                <fieldset>
+                <legend>Just Medrecid</legend>
+                  Medrecid: <input type = "text" id = "medrecid" value = ""></br></br>
+
+                  <input type = "submit" value = "Submit">
+                </fieldset>
+              </form>              
+            </td>
+            <td class = "form_td">
+              <form action = "#" method = "get" onsubmit = "getData2()">
+                <fieldset>
+                <legend>Field and Value</legend>
+                Field: 
+                <select id = "field">
+                  <option value="id">id</option>
+                  <option value="medrecid">medrecid</option>
+                  <option value="lastname">lastname</option>
+                  <option value="firstname">firstname</option>
+                  <option value="busname">busname</option>
+                  <option value="general">general</option>
+                  <option value="specity">specity</option>
+                  <option value="dob">dob</option>
+                  <option value="ssn">ssn</option>
+                  <option value="address">address</option>
+                  <option value="city">city</option>
+                  <option value="state">state</option>
+                  <option value="zip">zip</option>
+                  <option value="sanctype">sanctype</option>
+                  <option value="sancdate">sancdate</option>
+                  <option value="reindate">reindate</option>
+                  <option value="einnumber">einnumber</option>
+                  <option value="created">created</option>
+                  <option value="modified">modified</option>
+                  <option value="status">status</option>
+                </select></br></br>  
+                Value: <input type = "text" id = "element" value = ""></br></br> 
+                <input type = "submit" value = "Submit">
+                </fieldset>
+              </form>            
+            </td>
+            <td class = "form_td">
+              <form action = "#" method = "get" onsubmit = "getData3()">
+                <fieldset>
+                  <legend>Field, Value, and Column.</legend>
+                  Field: 
+                  <select id = "field2">
+                    <option value="id">id</option>
+                    <option value="medrecid">medrecid</option>
+                    <option value="lastname">lastname</option>
+                    <option value="firstname">firstname</option>
+                    <option value="busname">busname</option>
+                    <option value="general">general</option>
+                    <option value="specity">specity</option>
+                    <option value="dob">dob</option>
+                    <option value="ssn">ssn</option>
+                    <option value="address">address</option>
+                    <option value="city">city</option>
+                    <option value="state">state</option>
+                    <option value="zip">zip</option>
+                    <option value="sanctype">sanctype</option>
+                    <option value="sancdate">sancdate</option>
+                    <option value="reindate">reindate</option>
+                    <option value="einnumber">einnumber</option>
+                    <option value="created">created</option>
+                    <option value="modified">modified</option>
+                    <option value="status">status</option>
+                  </select></br></br>  
+                  Value: <input type = "text" id = "element2" value = ""></br></br> 
+                  Column: 
+                  <select id = "column2">
+                    <option value="id">id</option>
+                    <option value="medrecid">medrecid</option>
+                    <option value="lastname">lastname</option>
+                    <option value="firstname">firstname</option>
+                    <option value="busname">busname</option>
+                    <option value="general">general</option>
+                    <option value="specity">specity</option>
+                    <option value="dob">dob</option>
+                    <option value="ssn">ssn</option>
+                    <option value="address">address</option>
+                    <option value="city">city</option>
+                    <option value="state">state</option>
+                    <option value="zip">zip</option>
+                    <option value="sanctype">sanctype</option>
+                    <option value="sancdate">sancdate</option>
+                    <option value="reindate">reindate</option>
+                    <option value="einnumber">einnumber</option>
+                    <option value="created">created</option>
+                    <option value="modified">modified</option>
+                    <option value="status">status</option>
+                  </select></br></br>  
+                  <input type = "submit" value = "Submit">
+                </fieldset>
+              </form>
+            </td>
+          </tr>
+        </table>
+        <hr>
+        <div id = "resultsBox">
+          <h1 class = "center" >Results</h1>
+          <pre id = "data" ></pre>
+        </div>
+        <script type = "text/javascript" src = "test.js"></script>
+  </body>
+</html>

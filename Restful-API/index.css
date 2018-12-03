@@ -1,0 +1,24 @@
+/* Background pattern from Subtle Patterns */
+
+/* Global */
+body{
+    background-image:url(light_grey.png);
+}
+
+/* Classes */
+
+.form_td{
+    padding:15px 15px 15px 15px;
+}
+
+
+/* IDS */
+
+#center{
+    text-align:center;
+    width:100%;
+}
+
+#resultsBox{
+    padding-left:5px;  
+}
